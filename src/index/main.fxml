@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="index.UploadInfoController">
+   <children>
+      <GridPane prefHeight="600.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="6.0" prefHeight="42.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="68.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="189.0" minHeight="10.0" prefHeight="189.0" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="3.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label minHeight="50.0" text="app id" />
+            <TextField fx:id="appIdTv" prefHeight="23.0" prefWidth="155.0" GridPane.columnIndex="1" />
+            <Label text="app key" GridPane.rowIndex="1" />
+            <TextField fx:id="appKeyTv" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="bundle id" GridPane.rowIndex="2" />
+            <TextField fx:id="bundleIdTv" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="version" GridPane.rowIndex="3" />
+            <TextField fx:id="versionTv" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="platform" GridPane.rowIndex="4" />
+            <TextField fx:id="platformTv" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="inputSymbol" GridPane.rowIndex="5" />
+            <TextField fx:id="symbolTv" prefWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="symbolChooser" mnemonicParsing="false" text="..." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label text="inputMapping" GridPane.rowIndex="6" />
+            <TextField fx:id="mappingTv" prefWidth="400.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="mappingChooser" mnemonicParsing="false" text="..." GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="upload" mnemonicParsing="false" text="upload" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label fx:id="jarCommand" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label text="bugly jar path" GridPane.rowIndex="7" />
+            <TextField fx:id="buglyJarPathTv" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="buglyJarChooser" mnemonicParsing="false" text="..." GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button fx:id="openGithub" mnemonicParsing="false" text="https://github.com/fhbianling/BuglyUploader" textFill="#000dff" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
