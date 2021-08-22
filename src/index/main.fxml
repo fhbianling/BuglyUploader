@@ -46,7 +46,6 @@
             <Label text="bugly jar path" GridPane.rowIndex="7" />
             <TextField fx:id="buglyJarPathTv" GridPane.columnIndex="1" GridPane.rowIndex="7" />
             <Button fx:id="buglyJarChooser" mnemonicParsing="false" text="..." GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button fx:id="openGithub" mnemonicParsing="false" text="https://github.com/fhbianling/BuglyUploader" textFill="#000dff" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
          </children>
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

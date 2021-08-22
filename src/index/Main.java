@@ -36,7 +36,11 @@ public class Main extends Application {
         String filePath = prefs.get("filePath", null);
         if (filePath == null) {
             try {
-                prefs.put("filePath", File.createTempFile("config", null).getPath());
+                File temp = new File("temp.xml");
+                if (!temp.exists()) {
+                    temp.createNewFile();
+                }
+                prefs.put("filePath", temp.getPath());
             } catch (IOException e) {
                 e.printStackTrace();
             }

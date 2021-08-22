@@ -48,8 +48,6 @@ public class UploadInfoController {
     private Button buglyJarChooser;
     @FXML
     private Label jarCommand;
-    @FXML
-    private Button openGithub;
 
     private UploadInfo uploadInfo;
     private FileChooser fileChooser;
@@ -181,14 +179,6 @@ public class UploadInfoController {
             File jar = jarChooser.showOpenDialog(main.stage);
             if (jar != null && jar.exists()) {
                 buglyJarPathTv.setText(jar.getAbsolutePath());
-            }
-        });
-        openGithub.setOnAction(event -> {
-            String url = openGithub.getText();
-            try {
-                Desktop.getDesktop().browse(new URI(url));
-            } catch (IOException | URISyntaxException e) {
-                e.printStackTrace();
             }
         });
     }
